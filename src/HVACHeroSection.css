@@ -1,0 +1,205 @@
+.HVACHeroSection {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  gap: 54px;
+  padding: 0 4%;
+}
+
+.HVACHeroSection::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand for top: 0; right: 0; bottom: 0; left: 0 */
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 1;
+}
+
+.HVACHeroSection > * {
+  position: relative;
+  z-index: 2;
+}
+
+.HeroContent {
+  max-width: 550px;
+  width: 100%;
+}
+
+.HeroContent .Emergency {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  border-radius: 33554400px;
+  background: #e7000b;
+  width: 180px;
+  padding: 6px 11px;
+}
+
+.HeroContent .Emergency i {
+  width: 14px;
+  height: 14px;
+}
+
+.HeroContent .Emergency p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 11.531px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17.5px; /* 151.762% */
+}
+
+.HeroContent h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 53px;
+  margin: 30px 0 32px;
+}
+
+.HeroContent .HeroDescription {
+  color: #e5e7eb;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.HeroContent .HeroSectionButtons {
+  display: flex;
+  gap: 14px;
+  margin: 32px 0 39px;
+}
+
+.HeroContent .HeroSectionButtons a {
+  padding: 12px 22px;
+  text-decoration: none;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.HeroContent .HeroSectionButtons .ScheduleToday {
+  border-radius: 6.75px;
+  background: #e7000b;
+
+  color: #fff;
+}
+
+.HeroContent .HeroSectionButtons .Estimate {
+  border-radius: 6.75px;
+  border: 1px solid #fff;
+  background: #fff;
+  color: #000;
+}
+
+.HeroContent .HeroBenefits {
+  display: flex;
+  gap: 21px;
+}
+
+.HeroContent .HeroBenefit {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.HeroContent .HeroBenefit p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.HVACHeroSection .EmergencyServices {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 14px;
+  background: #155dfc;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 2%;
+}
+
+.HVACHeroSection h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.HVACHeroSection .EmergencyServices ul {
+  list-style: none;
+  padding: 21px 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.HVACHeroSection .EmergencyServices ul li {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.HVACHeroSection .EmergencyServices .Call {
+  border-radius: 9px;
+  background: #e7000b;
+  color: black;
+  text-align: center;
+  padding: 14px 0;
+}
+
+.HVACHeroSection .EmergencyServices .Call a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media (max-width: 865px) {
+  .HVACHeroSection {
+    flex-direction: column;
+    height: 100%;
+    padding: 15% 4% 10%;
+    text-align: center;
+  }
+
+  .HeroContent .Emergency {
+    margin: 0 auto;
+  }
+
+  .HeroContent .HeroSectionButtons {
+    justify-content: center;
+  }
+
+  .HeroContent .HeroBenefits {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .HeroContent .HeroSectionButtons {
+    flex-direction: column;
+  }
+
+  .HeroContent .HeroBenefits {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
