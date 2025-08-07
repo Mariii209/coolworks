@@ -203,3 +203,13 @@
     align-items: center;
   }
 }
+
+@media (max-width: 600px) {
+  .HeroContent h1 {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 53px;
+    margin: 30px 0 32px;
+  }
+}
