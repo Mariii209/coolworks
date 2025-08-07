@@ -1,0 +1,113 @@
+.Professional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+.Professional h3 {
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.Professional .ProfessionalDescription {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  margin: 18px 0 48px;
+}
+
+.Professional .ProfessionalGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px;
+}
+
+.Professional .ProfessionalCard {
+  height: auto;
+  border-radius: 13px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.Professional .ImgContainer {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Professional img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.Professional .Info {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+}
+
+.Professional .CardHeader {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.CardHeader .Award,
+.Wrench {
+  color: #e7000b;
+  font-size: 21px;
+}
+
+.CardHeader .Cart {
+  font-size: 21px;
+  color: #155dfc;
+}
+
+.Professional h4 {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.Professional .ProfessionalCard p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.MoreInfo {
+  padding-top: 5%;
+}
+
+@media (max-width: 950px) {
+  .Professional .ProfessionalGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .Professional .Info {
+    height: 150px;
+  }
+
+  .SixImg,
+  .FiveImg {
+    object-position: 0% 25%;
+  }
+
+  .FourImg {
+    object-position: 0% 28%;
+  }
+}
