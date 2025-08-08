@@ -1,0 +1,132 @@
+.Customers {
+  padding: 5%;
+}
+.Customers h2 {
+  color: #1c398e;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.Customers .CustomersDescription {
+  color: #4a5565;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 17px 0 60px;
+}
+
+.Customers .ReviewContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  max-width: 1300px;
+  width: 100%;
+  align-items: stretch;
+  margin: 0 auto;
+}
+
+.Customers .ReviewCard {
+  display: flex;
+  flex-direction: column; /* stack content */
+  justify-content: space-between;
+  min-height: 250px;
+  height: 100%;
+  gap: 5px;
+  border-radius: 13px;
+  background: #f9fafb;
+  padding: 5%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.Customers .ReviewCard .Stars {
+  color: #fcc800;
+  display: flex;
+}
+
+.Customers .ReviewCard .Stars i {
+  font-size: 17px;
+}
+
+.Customers .ReviewCard .ReviewDescription {
+  color: #364153;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.Customers .ReviewCard .Line {
+  border-top: 1px solid #e5e7eb;
+}
+
+.Customers .ReviewCard .ReviewInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Customers .ReviewCard .PersonInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.Customers .PersonInfo .Name {
+  color: #1c398e;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.Customers .PersonInfo .City {
+  color: #6a7282;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.Customers .ReviewInfo .Service {
+  color: #e7000b;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@media (max-width: 985px) {
+  .Customers .ReviewContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+@media (max-width: 620px) {
+  .Customers .ReviewContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Customers h2 {
+    font-size: 25px;
+  }
+
+  .Customers .CustomersDescription {
+    font-size: 14px;
+  }
+
+  .Customers .ReviewCard .Stars i {
+    font-size: 15px;
+  }
+
+  .Customers .ReviewCard .ReviewDescription {
+    font-size: 12px;
+  }
+}
