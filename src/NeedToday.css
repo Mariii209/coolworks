@@ -1,0 +1,118 @@
+.NeedToday {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+  padding: 5%;
+}
+
+.NeedToday .TodayContainer {
+  border-radius: 14px;
+  padding: 5%;
+  background: linear-gradient(90deg, #155dfc 0%, #e7000b 100%);
+}
+
+.NeedToday .TodayContainer h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.NeedToday .TodayContainer .TodayDescription {
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 17px 0 25px;
+}
+
+.NeedToday .TodayLinks {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.NeedToday .TodayLinks a {
+  text-decoration: none;
+  background: #fff;
+  padding: 11px 15px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  border-radius: 7px;
+}
+
+.NeedToday .Line {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(128, 128, 128, 1),
+    rgba(128, 128, 128, 0.4)
+  );
+  border: none;
+  margin: 28px 0 29px;
+}
+
+.NeedToday .TodayInfo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.NeedToday .TodayInfo .InfoContainer p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.NeedToday .TodayInfo .InfoContainer span {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@media (max-width: 600px) {
+  .NeedToday .TodayContainer h3 {
+    font-size: 27px;
+  }
+
+  .NeedToday .TodayContainer .TodayDescription {
+    font-size: 15px;
+  }
+
+  .NeedToday .TodayLinks {
+    flex-direction: column;
+  }
+
+  .NeedToday .TodayLinks a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .NeedToday .TodayInfo {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .InfoContainer {
+    text-align: center;
+  }
+}
