@@ -38,10 +38,10 @@ export default function HVACHeroSection() {
           and ventilation services. Licensed, insured, and ready to serve you.
         </p>
         <div className="HeroSectionButtons">
-          <a href="/" className="ScheduleToday">
+          <a href="#schedule-service" className="ScheduleToday">
             Schedule Service Today
           </a>
-          <a href="/" className="Estimate">
+          <a href="#schedule-service" className="Estimate">
             Get Free Estimate
           </a>
         </div>
@@ -91,7 +91,7 @@ export default function HVACHeroSection() {
           </li>
         </ul>
         <div className="Call">
-          <a href="/">
+          <a href="tel:2094500830">
             <p>Call Now:</p>
             <p>(209) 450-0830</p>
           </a>
