@@ -6,6 +6,7 @@ import Partners from "./Partners";
 import NeedToday from "./NeedToday";
 import Customers from "./Customers";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <NeedToday />
       <Customers />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,116 @@
+.Areas {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+  margin-top: 5%;
+  padding: 5%;
+  border-radius: 12.75px;
+  background: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.Areas .ServiceHeader {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+.Areas .ServiceHeader i {
+  font-size: 20px;
+  color: #e7000b;
+}
+
+.Areas .ServiceHeader h4 {
+  color: #1c398e;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.Areas .AreaDescription {
+  color: #4a5565;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  margin-top: 10px;
+}
+
+.Areas ul {
+  padding: 4%;
+  border-radius: 9px;
+  background: #eff6ff;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+  list-style: none;
+  margin: 42px 0 21px;
+}
+
+.Areas ul li {
+  display: flex;
+  align-items: center;
+  color: #364153;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  gap: 7px;
+}
+
+.Areas .AskYourArea {
+  padding: 3%;
+  display: flex;
+  gap: 11px;
+  border-radius: 8.75px;
+  border: 1px solid #ffe2e2;
+  background: linear-gradient(90deg, #fef2f2 0%, #eff6ff 100%);
+}
+
+.Areas .AskYourArea i {
+  font-size: 18px;
+  color: #e7000b;
+}
+
+.Areas .AskYourArea .CallForArea {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.Areas .AskYourArea .CallForArea p {
+  color: #1e2939;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.Areas .AskYourArea .CallForArea span {
+  color: #4a5565;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.Areas .AskYourArea .CallForArea .Color {
+  color: #e7000b;
+}
+
+@media (max-width: 800px) {
+  .Areas ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, auto);
+  }
+}
+
+@media (max-width: 800px) {
+  .Areas ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, auto);
+  }
+}

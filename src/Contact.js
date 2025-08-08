@@ -1,13 +1,15 @@
 import React from "react";
 import Swal from "sweetalert2";
 import "./Contact.css";
+import Areas from "./Areas";
+import Location from "./Location";
 
 export default function Contact() {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "e32146bc-af1d-40dd-9267-c98c6f84b02b");
+    formData.append("access_key", "40e0ce4e-b8b8-4db5-9c41-552060b42ebd");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -50,7 +52,7 @@ export default function Contact() {
           <input
             type="hidden"
             name="access_key"
-            value="e32146bc-af1d-40dd-9267-c98c6f84b02b"
+            value="40e0ce4e-b8b8-4db5-9c41-552060b42ebd"
           ></input>
 
           <h4>Request Service</h4>
@@ -128,8 +130,8 @@ export default function Contact() {
             <div className="MoreInfo">
               <i class="fa-regular fa-envelope"></i>
               <div className="Info">
-                <a href="mailto:humbertos550@icloud.com">
-                  humbertos550@icloud.com
+                <a href="mailto:humbertosanchez556@gmail.com">
+                  humbertosanchez556@gmail.com
                 </a>
                 <span>Email Support</span>
               </div>
@@ -159,6 +161,9 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      <Areas />
+      <Location />
     </div>
   );
 }

@@ -1,0 +1,137 @@
+.Footer {
+  background: #1c398e;
+  padding: 5%;
+}
+
+.Footer .FooterInfo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto 5%;
+}
+
+.Footer .FooterSection .LogoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Footer .FooterSection .LogoContainer img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.Footer .FooterSection h3 {
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.Footer .FooterSection span {
+  color: #8ec5ff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.Footer .FooterSection p {
+  color: #bedbff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.Footer .FooterSection .Description {
+  margin: 17px 0 18px;
+}
+
+.Footer .FooterSection .IG {
+  color: #8ec5ff;
+  font-size: 20px;
+}
+
+.Footer .ServicesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.Footer .MoreUs {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.Footer .Hours {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.Footer .FooterSection h4 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 14px;
+}
+
+.Footer .Us {
+  display: flex;
+  flex-direction: column;
+}
+
+.Footer .Us a {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  text-decoration: none;
+  color: #bedbff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.Footer .FooterSection .HourContainer span {
+  color: #bedbff;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.Footer .Line {
+  border-top: 1px solid #193cb8;
+}
+
+.Footer .MoreInfo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.Footer .MoreInfo p {
+  color: #8ec5ff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@media (max-width: 800px) {
+  .Footer .FooterInfo {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
