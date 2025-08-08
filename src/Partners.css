@@ -1,0 +1,92 @@
+.Partners {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+  padding: 5%;
+}
+.Partners .PartnersContainer {
+  border-radius: 12.75px;
+  background: linear-gradient(90deg, #eff6ff 0%, #fef2f2 100%);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding: 4% 4% 2%;
+}
+
+.Partners .PartnersContainer h3 {
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.Partners .PartnersContainer .PartnersDescription {
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 18px 0 34px;
+  padding: 0 4%;
+}
+
+.Partners .PartnersGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 21px;
+  align-items: stretch;
+}
+
+.Partners .PartnersGrid .PartnerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  border-radius: 9px;
+  height: 150px;
+  background: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.Partners .PartnerCard span {
+  font-size: 21px;
+}
+
+.Partners .PartnerCard h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.Partners .PartnerCard p {
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  max-height: 30px;
+  height: 100%;
+}
+
+@media (max-width: 950px) {
+  .Partners .PartnersGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .Partners .PartnersGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Partners .PartnersContainer h3 {
+    font-size: 22px;
+  }
+
+  .Partners .PartnersContainer .PartnersDescription {
+    font-size: 14px;
+  }
+}
