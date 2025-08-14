@@ -1,4 +1,5 @@
 import "./App.css";
+import NavBar from "./NavBar";
 import HVACHeroSection from "./HVACHeroSection";
 import Services from "./Services";
 import Professional from "./Professional";
@@ -11,6 +12,7 @@ import Footer from "./Footer";
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <HVACHeroSection />
       <Services />
       <Professional />
