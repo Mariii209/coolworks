@@ -69,19 +69,19 @@ export default function NavBar() {
           <p className="MenuSectionTitle">Navigation</p>
           <ul>
             <li>
-              <a href="#servies">
+              <a href="#servies" onClick={() => setShowMenu(false)}>
                 <i className="fa-solid fa-screwdriver-wrench"></i>
                 <p>Services</p>
               </a>
             </li>
             <li>
-              <a href="#reviews">
+              <a href="#reviews" onClick={() => setShowMenu(false)}>
                 <i className="fa-regular fa-star"></i>
                 <p>Reviews</p>
               </a>
             </li>
             <li>
-              <a href="#schedule-service">
+              <a href="#schedule-service" onClick={() => setShowMenu(false)}>
                 <i className="fa-regular fa-envelope"></i>
                 <p>Contact</p>
               </a>
@@ -92,13 +92,16 @@ export default function NavBar() {
           <p className="MenuSectionTitle">Contact Info</p>
           <ul>
             <li>
-              <a href="tel:2094500830">
+              <a href="tel:2094500830" onClick={() => setShowMenu(false)}>
                 <i className="fa-solid fa-phone"></i>
                 <p>(209) 450-0830</p>
               </a>
             </li>
             <li>
-              <a href="mailto:humbertosanchez556@gmail.com">
+              <a
+                href="mailto:humbertosanchez556@gmail.com"
+                onClick={() => setShowMenu(false)}
+              >
                 <i className="fa-solid fa-envelope"></i>
                 <p>humbertos550@icloud.com</p>
               </a>
@@ -108,6 +111,7 @@ export default function NavBar() {
                 href="https://www.google.com/maps/search/?api=1&query=3009+McKittrick+Ct+Ceres+CA+95307"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => setShowMenu(false)}
               >
                 <i className="fa-solid fa-location-dot"></i>{" "}
                 <p>3009 McKittrick Ct, Ceres, CA</p>
@@ -117,7 +121,7 @@ export default function NavBar() {
 
           {/* Footer Button */}
           <div className="MenuFooter">
-            <a href="#schedule-service">
+            <a href="#schedule-service" onClick={() => setShowMenu(false)}>
               <button className="EmergencyBtn">Book Emergency Service</button>
             </a>
           </div>

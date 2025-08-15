@@ -1,9 +1,18 @@
+.NavBar {
+  height: 60px;
+}
+
 .NavBar .NavBarInfo {
   background: #ffffff;
   padding: 5px 20px 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 990;
 }
 
 .NavBar .NavBarInfo .MainLogoInfo {
