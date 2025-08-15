@@ -5,7 +5,7 @@ import "./Services.css";
 
 export default function Services() {
   return (
-    <div className="Services">
+    <div className="Services" id="servies">
       <h2>Our HVAC Services</h2>
       <p className="ServiceDescription">
         Professional heating, ventilation, and air conditioning services for

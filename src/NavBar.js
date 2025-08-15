@@ -7,7 +7,30 @@ export default function NavBar() {
   return (
     <div className="NavBar">
       <nav className="NavBarInfo">
-        <img src="/logo.jpg" alt="" />
+        <div className="MainLogoInfo">
+          <img src="/logo.jpg" alt="" />
+          <div className="BusinessName">
+            <h2>Cool Work</h2>
+            <p>HVAC Expert</p>
+          </div>
+        </div>
+
+        <div className="LinksContainer">
+          <a href="#servies">Services</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#schedule-service">Contact</a>
+        </div>
+
+        <div className="BookingContainer">
+          <a href="tel:2094500830" className="PhomeInfo">
+            <i className="fa-solid fa-phone"></i>
+            <p>(209) 450-0830</p>
+          </a>
+          <a href="#schedule-service" className="BookNow">
+            Book Now
+          </a>
+        </div>
+
         <button
           className="MenuToggle"
           onClick={() => setShowMenu(true)}
@@ -46,13 +69,22 @@ export default function NavBar() {
           <p className="MenuSectionTitle">Navigation</p>
           <ul>
             <li>
-              <i className="fa-solid fa-screwdriver-wrench"></i> Services
+              <a href="#servies">
+                <i className="fa-solid fa-screwdriver-wrench"></i>
+                <p>Services</p>
+              </a>
             </li>
             <li>
-              <i className="fa-regular fa-star"></i> Reviews
+              <a href="#reviews">
+                <i className="fa-regular fa-star"></i>
+                <p>Reviews</p>
+              </a>
             </li>
             <li>
-              <i className="fa-regular fa-envelope"></i> Contact
+              <a href="#schedule-service">
+                <i className="fa-regular fa-envelope"></i>
+                <p>Contact</p>
+              </a>
             </li>
           </ul>
 
@@ -60,20 +92,34 @@ export default function NavBar() {
           <p className="MenuSectionTitle">Contact Info</p>
           <ul>
             <li>
-              <i className="fa-solid fa-phone"></i> (209) 450-0830
+              <a href="tel:2094500830">
+                <i className="fa-solid fa-phone"></i>
+                <p>(209) 450-0830</p>
+              </a>
             </li>
             <li>
-              <i className="fa-solid fa-envelope"></i> humbertos550@icloud.com
+              <a href="mailto:humbertosanchez556@gmail.com">
+                <i className="fa-solid fa-envelope"></i>
+                <p>humbertos550@icloud.com</p>
+              </a>
             </li>
             <li>
-              <i className="fa-solid fa-location-dot"></i> 3009 McKittrick Ct,
-              Ceres, CA
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=3009+McKittrick+Ct+Ceres+CA+95307"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-solid fa-location-dot"></i>{" "}
+                <p>3009 McKittrick Ct, Ceres, CA</p>
+              </a>
             </li>
           </ul>
 
           {/* Footer Button */}
           <div className="MenuFooter">
-            <button className="EmergencyBtn">Book Emergency Service</button>
+            <a href="#schedule-service">
+              <button className="EmergencyBtn">Book Emergency Service</button>
+            </a>
           </div>
         </div>
       </div>

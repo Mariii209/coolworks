@@ -3,7 +3,7 @@ import "./Customers.css";
 
 export default function Customers() {
   return (
-    <div className="Customers">
+    <div className="Customers" id="reviews">
       <h2>What Our Customers Say</h2>
       <p className="CustomersDescription">
         Don't just take our word for it. Here's what homeowners throughout the

@@ -1,9 +1,83 @@
 .NavBar .NavBarInfo {
   background: #ffffff;
-  padding: 5px 20px;
+  padding: 5px 20px 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.NavBar .NavBarInfo .MainLogoInfo {
+  display: flex;
+  align-items: center;
+}
+
+.NavBar .NavBarInfo .MainLogoInfo h2 {
+  color: #000;
+  font-size: 16.68px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.5px;
+}
+
+.NavBar .NavBarInfo .MainLogoInfo p {
+  color: #000;
+  font-size: 11.723px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17.5px;
+}
+
+.NavBar .NavBarInfo .LinksContainer {
+  display: flex;
+  gap: 28px;
+}
+
+.NavBar .NavBarInfo .LinksContainer a {
+  color: #000;
+  font-size: 13.344px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.NavBar .NavBarInfo .BookingContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.NavBar .NavBarInfo .BookingContainer .PhomeInfo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.NavBar .NavBarInfo .BookingContainer .PhomeInfo i {
+  font-size: 14px;
+  color: #000000;
+}
+
+.NavBar .NavBarInfo .BookingContainer .PhomeInfo p {
+  color: #000;
+  font-size: 12.359px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.NavBar .NavBarInfo .BookingContainer .BookNow {
+  border-radius: 6.75px;
+  background: #e7000b;
+  padding: 10px 14px;
+  color: #fff;
+  text-align: center;
+  font-size: 11.531px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17.5px;
+  text-decoration: none;
 }
 
 .NavBar .NavBarInfo img {
@@ -17,6 +91,7 @@
   font-size: 23px;
   cursor: pointer;
   color: black;
+  display: none;
 }
 
 /* Dark overlay when menu is open */
@@ -131,18 +206,25 @@
   margin: 0;
 }
 
-.NavBar .SideMenu .NavContactInfo ul li {
+.NavBar .SideMenu .NavContactInfo ul li p {
   padding: 10px 0;
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
   color: #101828;
-  font-family: Inter;
   font-size: 13.344px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+}
+
+.NavBar .SideMenu .NavContactInfo ul li a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: #101828;
 }
 
 .NavBar .SideMenu .NavContactInfo ul li i {
@@ -165,4 +247,18 @@
   border-radius: 25px;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media (max-width: 765px) {
+  .NavBar .NavBarInfo .MenuToggle {
+    display: block;
+  }
+
+  .NavBar .NavBarInfo .LinksContainer {
+    display: none;
+  }
+
+  .NavBar .NavBarInfo .BookingContainer {
+    display: none;
+  }
 }
